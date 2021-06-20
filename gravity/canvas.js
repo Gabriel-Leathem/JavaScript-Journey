@@ -33,7 +33,7 @@ let colors = [
 ];
 
 let gravity = 1;
-let friction = 0.96;
+let friction = 0.99;
 
 class Ball {
     constructor(x, y, dx, dy, radius, color) {
@@ -46,7 +46,9 @@ class Ball {
 
         this.update = function() {
             if (this.y + this.radius + this.dy > canvas.height) {
-                this.dy = -this.dy * friction;
+                this.dy = -this.dy;
+                this.dy = this.dy * friction;
+                this.dx = this.dx * friction;
             } else {
                 this.dy += gravity;
             }
