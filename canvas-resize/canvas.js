@@ -24,8 +24,8 @@ let ctx = canvas.getContext('2d');
 // ctx.strokeStyle = "#fa34a3"
 // ctx.stroke();
 
-//Arctx / ctxirctxle
-//ctx.arctx(x: Int, y: Int, r: Int, startingAngle: Float, endAngle: Float, drawctxounterctxloctxkwise: Bool (false));
+//Arc / Circle
+//ctx.arc(x: Int, y: Int, r: Int, startingAngle: Float, endAngle: Float, drawcounterclockwise: Bool (false));
 // for (var i = 0; i < 3; i++) {
 // 	let colors = ["red", "blue", "green"];
 // 	let x = Math.random() * window.innerWidth;
